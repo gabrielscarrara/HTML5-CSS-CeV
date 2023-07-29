@@ -1,6 +1,63 @@
 @charset "UTF-8";
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
 body, html {
     background-color: lightgray;
 }
 
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none; /* Tiras as bolinhas da lista no menu */ 
+}
+
+menu > ul > li > a { /* Link que está dentro do menu (poderia ser só menu > a)*/
+    display: block;
+    padding: 10px; /* Coloca um espaçamento entre a lista */
+    text-decoration: none;  /* Tira o underline dos itens da lista */
+    text-align: center; /* Tira os ietns da lista da esquerda e coloca no meio */
+    background-color: rgb(83, 83, 83);
+    color: white;
+    border-top: 2px solid rgb(149, 149, 149); /* Coloca uma borda preta em cima de cada item da lista */
+}
+
+menu > ul > li > a:hover {
+    background-color: gray; /* Quando passa o mouse em cima das caixas dos itens da lista, muda de cor */    
+}
+
+main {
+    width: 90vw; /* Faz o texto ficar com 90% da largura da tela */ 
+    background-color: white; 
+    margin: auto; /* Centraliza a caixa que tem o texto */ 
+    margin-top: 10px; /* Coloca uma margem no top, espaçando o menu do texto */ 
+    padding: 10px;
+    border-radius: 10px; /* Arredonda as bordas */ 
+}
+
+article > h2 {
+    padding-bottom: 20px; /* Da um espaçamento entre o texto e o título no artigo */  
+}
+
+article > p {
+    text-align: justify; /* Justifica o texto principal */ 
+    margin-bottom: 20px; /* Da um espaço entre cada paragrafo */ 
+    text-indent: 20px; /* Coloca um espaçõ em cada paragrafo do texto */ 
+    
+}
