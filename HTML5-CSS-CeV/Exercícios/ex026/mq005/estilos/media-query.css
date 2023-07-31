@@ -24,8 +24,7 @@ Grandes telas: acima de 1200px
     }
 
     main { 
-        width: 768; /* Para com telas grandes, o "main" (conteúdo) continuar com o tamanho e não aumentar */
+        width: 768px; /* Para com telas grandes, o "main" (conteúdo) continuar com o tamanho e não aumentar */
     }
-
 }
 
