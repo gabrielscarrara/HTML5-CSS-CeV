@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center center; /*Centraliza imagem ao meio */
-            background-repeat: no-repeat; /* Não repete a imagem */
+            background-position: center center; /*Centraliza imagem ao meio 
+            background-repeat: no-repeat; /* Não repete a imagem 
             background-size: cover; /*Cover: cobre a tela com a imagem
-                                      */
+                                      
+            background-attachment: fixed; /* Scroll: o fundo rola com o conteúdo 
+                                             Fixed: fica fixo
+            */
+            /* Shorthand - background
+                color > image > position > repeat > [size]> attachment */                                              
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed; /* É uma shorthand pra colocar: color > image > position > repeat > [size]> attachment */
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px; /* Largura não passa de certo valor */
             padding: 10px;
             margin: auto; /* Para ficar sempre centralizado */
             border: 1px solid darkblue;
@@ -24,9 +31,6 @@
         }
     </style>
 </head>
-/* Modulo 3, cap. 19, aula 06, 00:00
-https://www.youtube.com/watch?v=PzJwwA6LVts&embeds_referring_euri=https%3A%2F%2Fwww.cursoemvideo.com%2F&source_ve_path=Mjg2NjY&feature=emb_logo
-*/
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
