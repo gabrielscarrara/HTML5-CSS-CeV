@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /* 320px é a largura máxima de celulares + anitgos*/
+            max-width: 800px;
+            margin: auto; /* Centraliza o conteúdo */
+        }
+
+        img {
+            width: 100%; /* Faz com que a imagem se adapte a tela ao diminuir e aumentar o navegador*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores tempora numquam sapiente nisi ea aut recusandae voluptatem necessitatibus possimus reprehenderit iste ducimus iusto explicabo quaerat ipsa, placeat impedit ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores facilis suscipit dignissimos delectus, labore autem numquam neque ducimus quis modi hic sequi amet pariatur eveniet corrupti. Ipsa, laboriosam pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eveniet incidunt saepe nam commodi doloremque iure magnam consequatur distinctio! In magni ullam tempore cupiditate sed, ab sunt nostrum quas ad.</p>
+        <picture>
+            <source media="(max-width:800px)" srcset="imagens/irina-blok-pq.jpg"> <!--Quando a tela fica com menos de 800px, a imagem muda para outra imagem mais pequena-->
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores tempora numquam sapiente nisi ea aut recusandae voluptatem necessitatibus possimus reprehenderit iste ducimus iusto explicabo quaerat ipsa, placeat impedit ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores facilis suscipit dignissimos delectus, labore autem numquam neque ducimus quis modi hic sequi amet pariatur eveniet corrupti. Ipsa, laboriosam pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eveniet incidunt saepe nam commodi doloremque iure magnam consequatur distinctio! In magni ullam tempore cupiditate sed, ab sunt nostrum quas ad.</p>
+    </main>
+</body>
+</html>

@@ -22,18 +22,76 @@
     --fonte-android: 'Android', cursive;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color:var(--cor0);
     font-family: var(--fonte-padrao);
 }
 
+a.externo:after { /* Configura todos os links que são da classe externo, depois dele*/
+    content: '\00A0\1F517'; /* Coloca um icone com o código 1F517 retirado do site: https://emojipedia.org/ . O \00A0 coloca um espaço antes do icone*/
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3),var(--cor5));
+    min-height: 150px;
+    text-align: center; 
+    padding-top: 40px;
+}
+
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.413);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.413);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.212);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.369);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main h1 {
@@ -41,6 +99,86 @@ main h1 {
     font-family: var(--fonte-android);
 }
 
-main h2 {
+main h2 { 
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent); /* Faz um fundo degradê para a direita da cor1 para transparente */
+    text-indent: 8px;
+}
+
+main p { /* Configura os paragrafos p que estão dentro de main. (ESTÁ SEM O SINAL DE >, POIS CONFIGURA TODOS OS P DENTRO DE MAIN, MESMO ESTANDO DENTRO DE DIVS, ASIDE... */
+    margin: 15px 0px; /* Fica com 15px pras margens de cima e baixo, e 0px pras margens direita e esquerda*/
+    text-align: justify;
+    text-indent: 30px; /*Faz a margem no inicio de cada pargrafo */
+    font-size: 1em;
+    line-height: 2em; /* O espaçamento/altura entre linhas é 1em*/
+}
+
+main strong { /* Configura todos os STRONG (NEGRITO) dentro de Main */
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a { /* Configura todos os a (Links) em main */
+    text-decoration: none; /* Tira o sublinhado dos links! */
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px; /* Padding em cima de 2px e 6px na lateral*/
+}
+
+main a:hover { /* Configura o a dentro de main, quando passar o mouse em cima*/
+    text-decoration: underline; /* Coloca o sublinhado ao passar o mouse em cima do link*/ 
+    color: var(--cor4); /* Muda a cor para cor 4 ao passar o mouse em cima do link*/ 
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.465);
+}
+
+aside > h3 { /* Configura o h3, que está dentro do aside. */
+    background-color:var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* Coloca margens de: -10px na de cima, -10px na direita, 0px na de baixo e -10px na esquerda. */
+    border-radius: 10px 10px 0px 0px; /* Coloca raio na borda de: 10px em cima na esquerda, 10px em cima na direita, 0px em baixo na direita e 0px em baixo na esquerda.*/
+}
+
+aside > ul { /* Configura o ul (lista) que está dentro do aside */
+    list-style-type: '\2714\00A0\00A0'; /* Codigo 2714 do símbolo check, pego do site: https://emojipedia.org/ **OBS.: tem que colocar \ antes do número. O \00A0 coloca espaço. */
+    list-style-position: inside; /* Coloca a bolinha da lista para o lado de dentro*/
+    columns: 2; /* Divide a lista em 2 colunas*/
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center; /* Alinha o texto para o centro*/
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a { /* Configura todo o link dentro de footer (Rodapé) */
+    color: white;
+    font-weight: bolder;
+    text-decoration: none; /* Tira o sublinhado do link*/
+}
+
+footer a:hover { /* Configura todo o link dentro de footer (Rodapé), quando passar o mouse em cima */
+    text-decoration: underline;
+    color: var(--cor1);
 }
