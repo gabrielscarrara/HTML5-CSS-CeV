@@ -54,7 +54,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 }
 
 section.normal { /* Configura a section com a class = "normal"*/
@@ -68,6 +68,8 @@ section.imagem { /* Configura a section com a class = "imagem"*/
 }
 
 section.imagem > p { /* Configura na section com a class = "imagem", o p */
+    display: inline-block; /* Transforma na caixa que se adapta ao tamano do conteúdo */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.38);
 }
 
