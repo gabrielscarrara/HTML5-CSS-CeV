@@ -57,6 +57,10 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal { /* Configura a section com a class = "normal"*/
     background-color: white;
     color: black;
@@ -65,12 +69,25 @@ section.normal { /* Configura a section com a class = "normal"*/
 section.imagem { /* Configura a section com a class = "imagem"*/
     background-color: rgb(57, 57, 57);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.397);
+    background-size: cover;
+    background-attachment: fixed; /*Faz com que quando rola a página, a imagem fica fixa*/
 }
 
 section.imagem > p { /* Configura na section com a class = "imagem", o p */
     display: inline-block; /* Transforma na caixa que se adapta ao tamano do conteúdo */
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.38);
+    background-color: rgba(0, 0, 0, 0.33);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 { /*Configura a section com o id = "img01"*/
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 { /*Configura a section com o id = "img02"*/
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
